@@ -1,0 +1,32 @@
+
+:root{--bg:#0e0e0e;--card:#181818;--red:#c11b1b;--gold:#d4af37;--text:#f5f5f5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,sans-serif}
+.container{max-width:1200px;margin:auto;padding:0 24px}
+.ticker{background:var(--red);padding:10px;font-weight:700;text-transform:uppercase;font-size:12px}
+.track{text-align:center}
+header{border-bottom:1px solid #2d2d2d}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{display:flex;gap:12px;align-items:center}.logo{width:42px;height:42px;background:var(--red);display:grid;place-items:center}
+.title,h1,h2,h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase}
+.gold-btn,.cta{text-decoration:none;font-weight:700}
+.gold-btn{background:var(--gold);color:#000;padding:14px 18px}
+.hero{padding:80px 0;border-bottom:1px solid #2d2d2d}
+.hero-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.badge{display:inline-block;border:1px solid var(--gold);padding:8px 12px;color:var(--gold);margin-bottom:20px}
+h1{font-size:clamp(60px,10vw,130px);line-height:.85;margin:0}
+.red{color:var(--red)} .outline{-webkit-text-stroke:1px #fff;color:transparent}
+.hero p{max-width:650px;font-family:Spectral,serif;font-size:20px}
+.cta{display:inline-block;background:var(--red);color:#fff;padding:18px 28px;margin-top:20px;box-shadow:6px 6px 0 var(--gold)}
+.newsbox,.card{background:var(--card);border:1px solid #333;padding:24px}
+.gold{color:var(--gold);font-size:12px}
+.section{padding:80px 0}.section h2{font-size:52px}
+.alt{background:#151515}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card span{font-size:40px;color:var(--red);font-family:'Archivo Black'}
+.offer{padding:80px 0}
+.offerbox{border:4px solid var(--gold);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;background:var(--card)}
+.offer h2{font-size:100px;margin:0}.offer h2 span{color:var(--red)}
+.big{font-size:28px;text-align:center;width:100%}
+details{border-bottom:1px solid #333;padding:18px 0} summary{cursor:pointer;font-weight:700}
+footer{border-top:1px solid #333;padding:30px 0;text-align:center}
+@media(max-width:768px){.hero-grid,.offerbox{grid-template-columns:1fr}h1{font-size:64px}.section h2{font-size:38px}}
